@@ -1,0 +1,101 @@
+/*	Title: NOBE 2.0 CSS		Author: David Grochocki, NOBE Illinois IT Director										*/
+/*	This document contains both original and open source css styles gathered from various free online sources		*/
+
+* {margin: 0; padding: 0; outline: none;}
+html {margin: 0 0 1px 0; min-height: 100%}
+* body {font: 1em "Calibri", Arial, Sans-Serif;	color: #666666;overflow:auto; }
+p {margin: 0 0 1em 0;	line-height: 1.8em;}
+a { color: #0078cc; text-decoration: none;}
+img {border: 0;}
+
+/* Headlines */
+h1, h2, h3	{font-weight: normal;letter-spacing:-1px;word-spacing:-1px; color: #000;}
+h1 {font-size: 2.2em;	margin: 0 0 .4em; color: #0078cc;}
+h2 {font-size: 2em;	margin: 0 0 .7em; color: #000;}
+h3 {font-size: 1.5em;	margin: 0 0 0; color: #000;}
+h4 {font-size: 1.3em;	margin: 0 0 .3em; color: #000;}
+
+/* Misc. Classes */
+.clear { clear:both; }
+.right { float:right; }
+.shift { margin-left:50px; }
+.shortshift { margin-left:7px; }
+.medshift { margin-left:80px; }
+.longshift { margin-left:235px; }
+.pointer { cursor:pointer; }
+
+.inlineBox {border: 1px solid #e0e0e0;	background: #f4f4f4;	padding: 7px;}	/* Gray styleistic box around content */
+.info, .success, .warning, .caution, .denied {border: 2px solid;width:60%;margin: 10px auto;padding:15px 10px 15px 60px;} /* Boxes */
+.info {color: #00529B;	background:#BDE5F8 url('alerts/info.png') no-repeat 10px center;}	/* Blue */
+
+/* lists */
+#content ul.main {margin: 10px 0;}
+#content ul.main li	{margin: 0 0 10px 20px;}
+#content ol {margin: 10px 0;}
+#content ol li	{margin: 0 0 10px 20px;}
+#content ol ul {margin: 10px 10px;}
+
+/* Wrappers	*/
+#content {padding-top:5px;	clear: both;}	/* Content Container - excludes header/footer */
+.wrap {width: 1000px;	margin: 0 auto;	clear:both;}	/* Wrapper - regular content */
+.col { width: 323px;	margin: 0 10px 0 0; padding-bottom:10px;	float: left;}	/* Content Column (1/3) */
+.col2 {width: 646px;	margin: 0 30px 16px 0;	float: left;}	/* Content Column (2/3) */
+.last {margin: 0;	float: right;}	/* Denotes last column in series */
+.rightBorder {border-right: 1px solid #e0e0e0;}
+
+.grayFill {width: 1000px; height: 400px; clear:both; background-color:#666;}	/* Wrapper - regular content */
+
+/* Header */
+#header {width: 1000px;	height: auto; margin: 0 auto;}	/* Header Container */
+#header span {float: left;}	/* Logo Container */
+#header span img {width:auto; margin:10px 0px;}	/* Logo Container */
+
+/* Menu */
+#menu {padding: 6px 0 0 0;	list-style: none; float: left; text-align:center; margin-left:48px; margin-top:-6px;}
+#menu li {display: inline;}
+#menu a {
+	display: block;
+	width:50px;
+	float: left;
+	padding: 4px 20px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #FFF;
+	font-weight:bold;
+}
+#menu a.green {background-color:#b9e826;}
+#menu a.red {background-color:#ed2d35;}
+#menu a.yellow {background-color:#f4f333;}
+#menu a.lblue {background-color:#56e4e4;}
+#menu a.dblue {background-color:#0078cf;}
+#menu a.orange {background-color:#ff9e35;}
+#menu a.purple {background-color:#8559e1;}
+#menu a:hover {color: #FFF; cursor:pointer; padding: 8px 20px;}
+
+.green2 {color:#b9e826;}
+.red2 {color:#ed2d35;}
+.yellow2 {color:#f4f333;}
+.lblue2 {color:#56e4e4;}
+.dblue2 {color:#0078cf;}
+.orange2 {color:#ff9e35;}
+.purple2 {color:#8559e1;}
+
+
+/* Containers for Main Content (slideshow/quotes) */
+#left {width:600px;	float: left;}
+#right {height:280px;	width:375px;	float: right;}
+
+/* Footer */
+#footer {
+	font-size:12px;
+	border-top: 1px solid #e0e0e0;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 15px;
+	clear: both;
+}
+#footer img {float:left; margin-top:-5px; margin-right: 5px; margin-left: 5px;}
+#footer p {	float:left; }
+#footer p.right {	float:right;}
+#footer a {color: #0078cc;	float:left; text-decoration:none;}
+#footer span.left { float:left; }

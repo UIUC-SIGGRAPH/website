@@ -1,0 +1,7 @@
+name: "UIUC ACM SIGGRAPH Website"
+description: "Website for the UIUC ACM SIGGRAPH Student Chapter."
+url: "http://localhost:4000"
+
+markdown: rdiscount
+permalink: pretty
+pygments: true
