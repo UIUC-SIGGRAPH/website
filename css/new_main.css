@@ -1,0 +1,13 @@
+---
+slideshow_width: 700px
+slideshow_height: 400px
+---
+
+.slideshow {display: inline-flex;
+            position: relative;
+            width:{{ page.slideshow_width }};
+            height:{{page.slideshow_height }};}
+
+.slide{position:absolute;
+       width:{{ page.slideshow_width}};
+       height:{{page.slideshow_height}};}

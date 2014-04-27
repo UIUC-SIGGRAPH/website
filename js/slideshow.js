@@ -1,35 +1,51 @@
+/* This script is intended to create a slideshow in the parent element of this script. */
 
-// Contains the list of images for use with the slide show.
+// Contains the list of image names for use with the slide show.
+var imagenames = ["../images/1.png", "../images/2.png", "../images/3.png", "../images/4.png"];
+// The list of image objects in the slide show
 var images = new Array();
-
-var INTERVAL = 3000;
-
+// How long between changes on the slide show
+var INTERVAL = 5000;
+// How long it takes for stuff to fade
+var FADE_TIME = 1000;
+// The current image being displayed.
 var curImage = 0;
 
-var name = imageName;
+// Get the parent element of the script.
+var scripts = document.getElementsByTagName('script');
+var parent = scripts[scripts.length - 1].parentNode;
 
-// Sets up the slideshow, populating the images array.
-// The imageName parameter is the name of the img element to mess with.
-function setUpSlides(imageName)
+// Populate the div with hidden images
+for(var i = 0; i<imagenames.length; i++)
 {
-    // TODO: Do some logic to figure out which images to use
-    images[0] = "../images/1.png";
-    images[1] = "../images/2.png";
-    images[2] = "../images/3.png";
-    images[3] = "../images/4.png";
-    
-    name = imageName;
-    
-    window.setInterval(switchImages, INTERVAL);
+    var image = document.createElement("img");
+    image.src = imagenames[i];
+    image.name="image"+i;
+    image.setAttribute("class","slide");
+    parent.appendChild(image);
+    images[i] = image;
+    images[i].setAttribute("style", "display:none");
 }
+
+//images[0].style.visibility = 'visible'; // Show the first image
+images[0].setAttribute("style", "display:block");
+
+function setDivDimensions()
+{
+    parent.setAttribute("style", "width:"+images[0].clientWidth+"px;height:"+images[0].clientHeight+"px");
+}
+
+setTimeout(switchImages, INTERVAL);
 
 function switchImages()
 {
-    window.document.getElementById(name).src = images[curImage];
+    $(images[curImage]).fadeOut(FADE_TIME);
     curImage++;
     if(curImage >= images.length) // Wrap around
     {
         curImage = 0;
     }
-    //window.setInterval(switchImages(imageName), INTERVAL);
+    $(images[curImage]).fadeIn(FADE_TIME);
+    setTimeout(switchImages, INTERVAL);
+    
 }
