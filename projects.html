@@ -1,0 +1,14 @@
+---
+layout: default
+title: Projects
+---
+
+<section>
+    {% for project in site.categories.projects %}
+        <ul>
+            <li>
+                <a href="{{ site.url }}{{ project.url }}">{{project.title}}</a>
+            </li>
+        </ul>
+    {% endfor %}
+</section>

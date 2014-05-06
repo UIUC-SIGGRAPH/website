@@ -15,7 +15,7 @@ var curImage = 0;
 var scripts = document.getElementsByTagName('script');
 var parent = scripts[scripts.length - 1].parentNode;
 
-// Populate the div with hidden images
+// Populate the div with the images
 for(var i = 0; i<imagenames.length; i++)
 {
     var image = document.createElement("img");
@@ -27,13 +27,7 @@ for(var i = 0; i<imagenames.length; i++)
     images[i].setAttribute("style", "display:none");
 }
 
-//images[0].style.visibility = 'visible'; // Show the first image
 images[0].setAttribute("style", "display:block");
-
-function setDivDimensions()
-{
-    parent.setAttribute("style", "width:"+images[0].clientWidth+"px;height:"+images[0].clientHeight+"px");
-}
 
 setTimeout(switchImages, INTERVAL);
 

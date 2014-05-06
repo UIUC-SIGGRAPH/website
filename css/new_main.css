@@ -11,3 +11,7 @@ slideshow_height: 400px
 .slide{position:absolute;
        width:{{ page.slideshow_width}};
        height:{{page.slideshow_height}};}
+       
+.main{width: 1000px;
+      height: auto; 
+      margin: 0 auto;}
