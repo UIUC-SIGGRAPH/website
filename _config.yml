@@ -1,6 +1,6 @@
 name: "UIUC ACM SIGGRAPH Website"
 description: "Website for the UIUC ACM SIGGRAPH Student Chapter."
-url: /graph
+#url: /graph
 
 markdown: rdiscount
 pygments: true

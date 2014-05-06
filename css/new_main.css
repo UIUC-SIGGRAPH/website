@@ -15,3 +15,13 @@ slideshow_height: 400px
 .main{width: 1000px;
       height: auto; 
       margin: 0 auto;}
+      
+#project_content{width:70%;
+                 float:left;}
+                 
+#project_quickref{width:22%;
+                  background:#AAAAFF;
+                  padding:2% 2% 2% 2%;
+                  float:left;}
+                
+#project_quickref ul {margin-left:1em;}
